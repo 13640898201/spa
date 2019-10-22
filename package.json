@@ -17,6 +17,9 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "@progress/kendo-charts-vue-wrapper": "^2019.3.917",
+    "@progress/kendo-theme-default": "^4.5.0",
+    "@progress/kendo-ui": "^2019.3.1016",
     "amfe-flexible": "^2.2.1",
     "autoprefixer": "^7.1.2",
     "axios": "^0.19.0",
