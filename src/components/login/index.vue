@@ -1,27 +1,58 @@
 <template>
 	<div @click='login' >
-		<!--<Calendar></Calendar>
-		 <button >click me!</button>-->
-		  <mt-switch v-model="value">开关</mt-switch>
-		  <el-row>
-  <el-col :span="24"><div class="grid-content bg-purple-dark">2</div></el-col>
-</el-row>
-<el-row>
-  <el-col :span="12"><div class="grid-content bg-purple">2</div></el-col>
-  <el-col :span="12"><div class="grid-content bg-purple-light">2</div></el-col>
-</el-row>
-<el-row>
-  <el-col :span="8"><div class="grid-content bg-purple">2</div></el-col>
-  <el-col :span="8"><div class="grid-content bg-purple-light">2</div></el-col>
-  <el-col :span="8"><div class="grid-content bg-purple">2</div></el-col>
-</el-row>
+		登录
 	</div>
- 
-	<!---->
 </template>
 
 <script>
 	import axios from 'axios'
+
+
+
+//export default{
+//  name: "vueapp",
+//   components: {
+//    
+// },
+//  data: function() {
+//      return {
+//          series: [],
+//          categories: ["Aug", "Sep", "Oct"],
+//          axis: [{
+//              name: "temperature",
+//              labels: {
+//                  format: "{0}C"
+//              }
+//          },
+//          {
+//              name: "humidity",
+//              labels: {
+//                  format: "{0}%"
+//              }
+//          }]
+//      }
+//  },
+//  beforeMount(){
+//  	setTimeout(()=>{
+//  		this.ajax()
+//  	},500)
+//  	
+//  },
+//  methods:{
+//  	ajax(){
+//  		this.series=[{
+//              name: 'Temperature',
+//              data: [20, 25, 32],
+//              axis: "temperature"
+//          },
+//          {
+//              name: 'Humidity',
+//              data: [40, 50, 80],
+//              axis: "humidity"
+//          }]
+//  	}
+//  }
+//}
 
 	export default{
 		name:'login',
