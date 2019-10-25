@@ -3,13 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//import store from './store/index.js'
+import store from './store'
 //import ElementUI from 'element-ui'
 import axios from 'axios'
-import 'amfe-flexible'
+//import 'amfe-flexible'
 import './assets/styles/reset.css'
 //import Mint from 'mint-ui'
-
-
+//
 import '@progress/kendo-ui'
 import '@progress/kendo-theme-default/dist/all.css'
 import {
@@ -20,8 +21,17 @@ import {
 	StockChart,
 	ChartInstaller
 } from '@progress/kendo-charts-vue-wrapper'
+import {
+	MaskedTextBox,
+	NumericTextBox,
+	ColorPicker,
+	Slider,
+	RangeSlider,
+	Switch,
+	InputsInstaller
+} from '@progress/kendo-inputs-vue-wrapper'
 Vue.use(ChartInstaller)
-
+Vue.use(InputsInstaller)
 
 Vue.config.productionTip = false
 //Vue.use(ElementUI)
@@ -53,11 +63,18 @@ axios.interceptors.response.use(function(response) {
 new Vue({
 	el: '#app',
 	router,
+	store,
 	components: {
 		App,
-		 Chart,
-       Sparkline,
-       StockChart
+		Chart,
+		Sparkline,
+		StockChart,
+		MaskedTextBox,
+		NumericTextBox,
+		ColorPicker,
+		Slider,
+		RangeSlider,
+		
 	},
 	template: '<App/>'
 })

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 //import login from '@/components/login'
-//import Home from '@/components/home'
+//import home from '@/components/home'
 
 const login = r => require.ensure([], () => r(require('@/components/login')), 'login');//webpack.base.conf.js里配置chunkFilename:'[name].js'//按需加载的重命名
 
